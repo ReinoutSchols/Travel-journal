@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* styling my navbar */
+.NavBar {
+  background-color: #f55a5a;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.nav--title {
+  color: black;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 8px; /* Adjust the margin as needed */
+ 
+}
+
+.nav--logo {
+  font-size: 30px;
+}
+
+
+/* Styling my Card component*/
+
+
+.Card {
+  display: flex;
+  align-items: center;
   color: white;
+  background-color: 	#202020;
+  font-family: 'Inter';
 }
 
-.App-link {
-  color: #61dafb;
+.Card--image {
+  max-width: 320px;
+  margin-right: 10px;
+  border-radius: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card--text {
+  flex: 1; /* Allow the text to take up remaining space */
+  
+}
+
+.Card--location {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.Card--location p {
+  margin-left: 8px; /* Add some margin between the icon and location text */
+  font-size: 16px;
+}
+
+.Card--link {
+  color: blue; /* Adjust the link color as needed */
+  text-decoration: underline; /* Add underline to the link */
+  margin-left: 10px;
+}
+
+.Card--content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px; /* Add some margin between the image and text */
+    
+}
+.Card--date{
+  font-size: 0.9rem;
+  
+}
+.Card--description {
+  font-size: 0.7rem;
+}
+
+.Card--date h3 {
+  margin: 0; /* Remove margin */
+}
+
+.Card--title {
+  margin-bottom: 5px; /* Remove margin */
+  margin-top: 0px;
 }

@@ -4,20 +4,21 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card(props) {
     return (
-        <div>
-            <img className="Card--image" src={props.imageUrl} alt="image of holiday destination" />
-            <section>
-                {/* Use FontAwesomeIcon for rendering the icon */}
-                <FontAwesomeIcon icon={faLocationDot} />
-                <p>{props.location}</p>
-            </section>
-            <h2>{props.title}</h2>
-            <section className="Card--date">
-                <h3>{props.startDate}-{props.endDate}</h3>
-            </section>
-            <p className='Card-description'>{props.description}</p>
-            <p className='Card--country'>{props.location}</p>
-            <p className='Card--link'>{props.googleMapsUrl}</p>
+        <div className='Card'>
+            <img className="Card--image" src={props.imageUrl} alt="Location Image" />
+            <div className='Card--content'>
+                <section className="Card--location">
+                    <FontAwesomeIcon icon={faLocationDot} style={{ color: '#f55a5a' }} />
+                    <p>{props.location}</p>
+                    <a href={props.googleMapsUrl} className='Card--link' target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+                </section>
+                <h2 className='Card--title'>{props.title}</h2>
+                <section className="Card--date">
+                    <h3>{props.startDate}-{props.endDate}</h3>
+                </section>
+                <p className='Card--description'>{props.description}</p>
+            </div>
         </div>
     );
 }
+
