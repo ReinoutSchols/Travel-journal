@@ -21,7 +21,7 @@ This is my solution to the Travel Journal solo project on Scrimba.
 - Style & polished
 
 ### Links
-Live Site URL: [@netlify](still need to add link :))
+Live Site URL: [@netlify]([still need to add link :)](https://6579ef2928cbcb44533f9cea--astounding-gumption-948f82.netlify.app/))
 
 ## Process
 ### Built with
