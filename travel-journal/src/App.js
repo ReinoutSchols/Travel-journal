@@ -6,7 +6,8 @@ import Card from "./components/Card.js";
 import Footer from "./components/Footer.js";
 
 export default function App() {
-  const cards = data.map((item) => {
+  const maxCardsToShow = 3;
+  const cards = data.slice(0, maxCardsToShow).map((item) => {
     return <Card key={item.key} {...item} />;
   });
 

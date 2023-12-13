@@ -3,14 +3,20 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="Footer">
             <small>
-                <p>Coded with ❤️ by Reinout</p>
-                <p><a href="mailto:reinoutschols@hotmail.com">reinoutschols@hotmail.com</a></p>
+                Coded with ❤️ by {" "}
+                <a
+                className="footer--link"  
+                href="mailto:reinoutschols@hotmail.com" 
+                target="_blank" 
+                rel="noreferrer"
+                >
+                    Reinout Schols
+                </a>
             </small>
         </footer>
             );
-
   }
 
   
