@@ -30,6 +30,11 @@ Live Site URL: [@netlify](still need to add link :))
 - Visual studio code
 - Netlify
 ### What I learned
+- My first real project build locally using visual studio code, command line,..
+- Used a little bit responsive web design. Could be better but not bad for a first go.
+-  Used reusable components and learned how to work with props, components and how it all combines in a nice SPA.
+- Learned how to limit max shown cards on webpage.
+- ...
 
 ## Author
 
